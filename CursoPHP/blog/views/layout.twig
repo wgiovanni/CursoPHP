@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Blog with Platzi</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.4.4/sweetalert2.min.css"-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.3.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/blog.css" />
+	</head>
+	<body>
+		<div class='container'>
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Blog Title</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					{% block content %} {% endblock %}
+				</div>
+				<div class="col-md-4">
+					Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<footer>
+					This is a footer
+					<a href="{{ 'admin' | url }}">Admin Panel</a>
+				</footer>
+				</div>
+			</div>
+		</div>
+		<!--script src="https://cdn.jsdelivr.net/sweetalert2/6.4.4/sweetalert2.min.js"></script-->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.3.2/dist/sweetalert2.all.min.js"></script>
+		{% block js %}{% endblock %}
+	</body>
+</html>
